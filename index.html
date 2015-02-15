@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SHOWROOM</title>
+
+
+</head>
+
+<body>
+  <p>
+      Press "select" button to select a car.
+  </p>
+
+<form id="form" onsubmit="submitForm(event)">
+  <label>Brand</label>
+  <select id="brand" name='brand'>
+    <option value="Honda">Honda</option>
+    <option value="Mazda">Mazda</option>
+    <option value="Nissan">Nissan</option>
+    <option value="Toyota">Toyota</option>
+  </select>
+  <br/>
+  <label>Model</label>
+  <input name="model"/>
+  <br/>
+  <label>Fuel</label>
+   <select name='fuel'>
+    <option value="gas">Gas</option>
+    <option value="disel">Disel</option>
+    <option value="lpg">LPG</option>
+  </select>
+  <br/>
+  <label>Year</label>
+  <input name="year"/>
+  <br/>
+
+  <label>Doors</label>
+  <input name="doors"/>
+  <br/>
+  <label>Price</label>
+  <input name="price"/>
+  <br/>
+
+  <input type="submit" value="Search"/>
+  <input type="button" onclick="addCar()" value="Add"/>
+  <br/>
+</form>
+
+
+
+<div id="results">
+</div>
+
+
+</body>
+
+<script src="cars.js"></script>
+</html>
